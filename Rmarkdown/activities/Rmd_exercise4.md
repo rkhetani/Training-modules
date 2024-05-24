@@ -1,8 +1,8 @@
 ## Exercise #4
 
 1. Check if you have the `tidyverse` and `pheatmap` packages installed, if you don't please install them using `install.packages()` before starting this exercise.
-1. **Download the linked [R script](https://github.com/hbctraining/Training-modules/raw/master/Rmarkdown/Rscript.R)** and save it within the `rmd_workshop` project directory.
-2. **Download the linked [RData object](https://github.com/hbctraining/Training-modules/raw/master/Rmarkdown/data/Rmarkdown_data.Rdata)** by right-clicking and save it to the `data` folder within the `rmd_workshop` project directory.
+1. **Download the linked [R script](Rscript.R)** and save it within the `rmd_workshop` project directory.
+2. **Download the linked [RData object](data/Rmarkdown_data.Rdata)** by right-clicking and save it to the `data` folder within the `rmd_workshop` project directory.
 3. Open the Rscript file, **transform the R script into a RMarkdown file** by clicking `File` -> `Rename`, and rename it as `Rscript.Rmd`. 
 4. It now has the correct extension for an RMarkdown file, but you won't be able to knit it as is. Add the following updates to be able to knit this file:
     - Add a basic YAML header at the top 
