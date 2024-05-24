@@ -1,5 +1,0 @@
-# Learning Objectives
--
--
-
-# Snapshot
