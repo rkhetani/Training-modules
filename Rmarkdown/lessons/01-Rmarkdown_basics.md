@@ -49,11 +49,17 @@ Ready to get started?
 
 Before we delve into the details, we will start with an activity to show you what an RMarkdown file (.Rmd extension) looks like, and how to generate the resulting HTML report using the `knit()` function (which is part of the R [knitr package](https://yihui.name/knitr/)).
 
-1. Open up RStudio and **create a new project** in a new directory called `rmd_workshop`. Remember the location in computer where you create this project.
-2. **Right click [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)**. Download it (using **Save Link As**) and place it within the `rmd_workshop` project directory.
-3. **Download and uncompress [this data folder](../data/data.zip?raw=true)** within the `rmd_workshop` project directory.
-4. **Open the .rmd file** in RStudio.
-5. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
+1. Getting started:
+
+   2. Start up RStudio on SCP.
+   4. If you have a project open, close it.
+   5. Download the `rmd_workshop.zip` file from the Files tab in Teams to your computer.
+   6. Upload the zip file to SCP.
+   
+6. Click on the file called `rmd_workshop.Rproj` to open up the project in the folder you just uploaded. RStudio will go away for a few seconds and when it returns you should have the rmd_workshop project open.
+7. **Right click [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)**. Download it (using **Save Link As**) and place it within the `rmd_workshop` project directory.
+9. **Open the workshop-example.rmd file**.
+10. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
 
 <img src="../img/r-knit-button.png">
 
