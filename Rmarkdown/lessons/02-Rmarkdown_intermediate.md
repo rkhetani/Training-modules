@@ -90,6 +90,11 @@ There are some other functions that allow for more powerful customization of tab
 `knitr` redefines the working directory of an RMarkdown file in a manner that can be confusing. Make sure that any paths to files specified in the RMarkdown document is relative to its location, and not relative to your current working directory.
 
 A simple way to make sure that the paths are not an issue is by creating an R project for the analysis, and saving all RMarkdown files at the top level and referring to the data and output files within the project directory. This will prevent unexpected problems related to this behavior.
+***
+
+[Practice exercises](../activities/Rmd_exercise4.md)
+
+[Schedule](../README.md#contents)
 
 ***
 
