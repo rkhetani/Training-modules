@@ -57,7 +57,6 @@ Before we delve into the details, we will start with an activity to show you wha
    6. Upload the zip file to SCP.
    
 6. Click on the file called `rmd_workshop.Rproj` to open up the project in the folder you just uploaded. RStudio will go away for a few seconds and when it returns you should have the rmd_workshop project open.
-7. **Right click [this RMarkdown file](https://raw.githubusercontent.com/hbctraining/Training-modules/master/Rmarkdown/data/workshop-example.Rmd)**. Download it (using **Save Link As**) and place it within the `rmd_workshop` project directory.
 9. **Open the workshop-example.rmd file**.
 10. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
 
