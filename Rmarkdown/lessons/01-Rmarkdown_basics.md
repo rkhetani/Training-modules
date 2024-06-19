@@ -51,7 +51,7 @@ Before we delve into the details, we will start with an activity to show you wha
 
 1. Getting started:
 
-   2. Start up RStudio on SCP.
+   1. Start up RStudio on SCP.
    4. If you have a project open, close it.
    5. Download the `rmd_workshop.zip` file from the Files tab in Teams to your computer.
    6. Upload the zip file to SCP.
