@@ -1,12 +1,11 @@
 ## Exercise #4
 
 1. Check if you have the `tidyverse` and `pheatmap` packages installed, if you don't please install them using `install.packages()` before starting this exercise.
-1. **Download the linked [R script](../Rscript.R)** and save it within the `rmd_workshop` project directory.
-2. **Download the linked [RData object](../data/Rmarkdown_data.Rdata)** by right-clicking and save it to the `data` folder within the `rmd_workshop` project directory.
-3. Open the Rscript file, **transform the R script into a RMarkdown file** by clicking `File` -> `Rename`, and rename it as `Rscript.Rmd`. 
-4. It now has the correct extension for an RMarkdown file, but you won't be able to knit it as is. Add the following updates to be able to knit this file:
-    - Add a basic YAML header at the top 
-    - Create an R chunk for all code underneath each `#` comment in the original R script
+1. There is an R script in the `Practice with RMarkdown` folder in the `rmd_workshop` project directory. This folder contains two files, an R script and an `.Rdata` file.
+3. Open the Rscript file, check that all the code works for you. Troubleshoot anything that does not work.
+4. Once you have a working R script, you can create a new RMarkdown file and start replacing the default content with your words and the code from the Rscript as follows:
+    - Replace the basic YAML header at the top to be something meaningful
+    - Create code chunk for each section
     - Comment on the plots (you may have to run the code from the R script to see the plots first)
     - Add a floating table of contents in the YAML header by referring to these [instructions](https://bookdown.org/yihui/rmarkdown/html-document.html#floating-toc). YAML is fussy about indentations, make sure you are paying attention to it.
     - (Optional) If you would like to have a button that show/hide your code in the report, you can add an additional argument in the YAML header by referring to this [instruction](https://bookdown.org/yihui/rmarkdown/html-document.html#code-folding).
