@@ -56,20 +56,13 @@ Before we delve into the details, we will start with an activity to show you wha
    5. Download the `rmd_workshop.zip` file from the Files tab in Teams to your computer.
    6. Upload the zip file to SCP.
    
-6. Click on the file called `rmd_workshop.Rproj` to open up the project in the folder you just uploaded. RStudio will go away for a few seconds and when it returns you should have the rmd_workshop project open.
+6. Click on the file called `rmd_workshop.Rproj` to open up the project in the folder you just uploaded. It will ask you if you want to open the new project, say yes. RStudio will go away for a few seconds and when it returns you should have the rmd_workshop project open.
 9. **Open the workshop-example.rmd file**.
-10. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane.
+10. **knit the markdown** by clicking on the `Knit` button located at the top of your script editor pane. 
 
 <img src="../img/r-knit-button.png">
 
-In the console, you will see a flurry of text scrolling by. The text indicates progress while each code chunk is being executed. Once the document is finished 'knitting', a new window will be automatically opening up with the HTML report that was just generated. 
-
-> **NOTE**: If you run into an error when knitting the markdown, make sure the directory structure of the `rmd_workshop` project is set properly as shown below:
-> - The `data` folder should be in the same directory as `workshop-example.rmd` file
-> - Two files (`counts.rpkm.csv` and `mouse_exp_design.csv`) are located inside the `data` folder
-> <p align="center">
-> <img src="../img/workingDir_screenshot.png" width="450">
-> </p>
+In the console panel, you will see a flurry of text scrolling by in a new tab called "Render". The text indicates progress while each "code chunk" is being executed. Once the document is finished 'knitting', a new window will be automatically opening up with the HTML report that was just generated. You may get prompted if your browser does not allow pop ups by default, just say "Try again".
 
 ---
 
