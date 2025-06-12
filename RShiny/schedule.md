@@ -1,4 +1,4 @@
-Schedule for the RShiny course
+## Schedule for the RShiny course
 
 ## Day 1
 
