@@ -21,7 +21,7 @@ One option for distributing your app is for it to be run on people's own compute
 
 As we previously mentioned, the most common way for apps to hosted is via servers. One nice aspect of hosting an app within a server is that the version concerns of running an app locally disappears because the developer's versions of the loaded packages are the ones that are used on the server. There are two ways that you might choose to host your apps on a server:
 
-### Posit Connect 
+### Posit Connect (recommended for internal use)
 
 One option for hosting your Shiny apps is to use Posit Connect, which your institution may have an account for. Users who use this option have access to an unlimited number of apps and computational hours for the duration of the pilot at no cost. This is the likely best option for people who are eligible. Uploading apps through this platform has a few advantages:
 
@@ -29,11 +29,11 @@ One option for hosting your Shiny apps is to use Posit Connect, which your insti
 2. It allows you to control access to who can see and use your app. You can let anyone use it, require a login or only invite certain people to be able to use it
 3. You can give it a custom URL
 
-### Shinyapps.io
+### Shinyapps.io (to be used with public data only)
 
 If you aren't eligible for Posit Connect or the HMS Research Data Visualization Platform then [Shinyapps.io](https://www.shinyapps.io/) is a platform that is run by Posit for hosting Shiny apps and it is likely your next best choice. It has several different levels of access. Its lowest level of access is free and allows the developer to upload up to 5 apps and have 25 hours of computing per month. This level is recommended if you are new to the Shiny world. It allows you host a few apps and play around with them a bit. However, you can quickly go through the 25 hours of computational resources and it won't be too hard to create more than 5 apps. After the free level, they have higher levels of service that provide developers with more computational hours and higher, or even no, limits on the number of apps. Higher levels also come with more customer services options as well. Pricing information can be found [here](https://www.shinyapps.io/#pricing-anchor).
 
-## Serverless with Shinylive
+## Serverless with Shinylive (to be used with public data only)
 
 The last option for hosting is to host your app online on a site like GitHub Pages in a serverless manner. This can work because at the heart of R, it uses C/C++ and modern web browsers can interpret C/C++ code. While there are some limitations to this approach, what it means is that you can host the code for your Shiny app on a website and it is interpretted locally in the user's web browser. To the user it feels like a traditional, server-hosted app, but under the hood it is actually being run from their own web browser. Due to it being running locally from the user's web browser, the user is limited by their local memory constraints. The image below contrasts the more traditional server-hosted approach with this server-less shinylive approach:
 
