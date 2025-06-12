@@ -23,6 +23,7 @@ In this workshop, users will be able to:
 ## Schedule and links to lessons
 
 ### Day 1
+
 | Lesson            | Estimated Duration |
 |:----------------|:----------|
 | Introduction to the course | 20 min | 
@@ -30,6 +31,7 @@ In this workshop, users will be able to:
 | [Input options](lessons/02_inputs.md) | 50 min |
 
 ### Day 2
+
 | Lesson          | Estimated Duration |
 |:----------------|:----------|
 | Polls and Q&A | 15 min |
