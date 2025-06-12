@@ -64,3 +64,7 @@ Prior to the workshop please install the following R packages:
 ## Interesting Input Widgets
 - [Picker](https://github.com/hms-dbmi/picker)
 - [shinyChakraSlider](https://github.com/stla/shinyChakraSlider)
+
+***
+
+This lesson has been developed by members of the teaching team at the Harvard Chan Bioinformatics Core (HBC). These are open access materials distributed under the terms of the Creative Commons Attribution license (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.
