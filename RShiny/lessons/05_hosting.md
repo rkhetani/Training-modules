@@ -21,9 +21,9 @@ One option for distributing your app is for it to be run on people's own compute
 
 As we previously mentioned, the most common way for apps to hosted is via servers. One nice aspect of hosting an app within a server is that the version concerns of running an app locally disappears because the developer's versions of the loaded packages are the ones that are used on the server. There are two ways that you might choose to host your apps on a server:
 
-### Posit Connect / HMS Research Data Visualization Platform (RDVP)
+### Posit Connect 
 
-One option for hosting your Shiny apps is to use [Posit Connect](https://posit.co/products/enterprise/connect/), which your institution may have an account for. HMS has made a pilot for Posit Connect availible to **HMS Quad-based faculty, staff, and students** through the [HMS Research Data Visualization Platform](https://it.hms.harvard.edu/service/research-data-visualization-platform-rdvp-pilot). Unfortunately, HSDM, HSPH, hospital affiliates, and hospital-based labs are _not_ eligible. Users who use this option have access to an unlimited number of apps and computational hours for the duration of the pilot at no cost. This is the likely best option for people who are eligible. Uploading apps through this platform has a few advantages:
+One option for hosting your Shiny apps is to use Posit Connect, which your institution may have an account for. Users who use this option have access to an unlimited number of apps and computational hours for the duration of the pilot at no cost. This is the likely best option for people who are eligible. Uploading apps through this platform has a few advantages:
 
 1. Uploading apps is simple
 2. It allows you to control access to who can see and use your app. You can let anyone use it, require a login or only invite certain people to be able to use it
