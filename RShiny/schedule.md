@@ -1,3 +1,5 @@
+Schedule for the RShiny course
+
 ## Day 1
 
 | Lesson            | Estimated Duration |
