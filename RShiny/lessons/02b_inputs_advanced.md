@@ -2,9 +2,9 @@
 
 Previously, we have seen the case of input being used to directly create outputs. However, there is third tool in the Shiny toolkit and it is called reactive expressions. Reactive expressions are useful because they take inputs and produce outputs and they cache, or store, their output. This can be very useful for three reasons:
 
-1) When a step is present multiple times in your code and this step that is either computationally intensive or requires interacting with outside databases, Shiny will only need to carry out the task once rather than each time the process is called since the output will be cached for future uses
-2) It makes your code cleaner because you only need to maintain the code for a repetitive step in a single place
-3) They are needed to use action buttons (discussed in the next section)
+1. When a step is present multiple times in your code and this step that is either computationally intensive or requires interacting with outside databases, Shiny will only need to carry out the task once rather than each time the process is called since the output will be cached for future uses
+2. It makes your code cleaner because you only need to maintain the code for a repetitive step in a single place
+3. They are needed to use action buttons (discussed in the next section)
 
 Below we see relationship between input and output that we have seen up to this point:
 
