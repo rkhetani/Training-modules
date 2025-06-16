@@ -338,9 +338,11 @@ The same additional arguments that were used with `dateInput()` also apply here.
 
 **Exercise**
 
-In this exercise, you will use the input widgets presented above and the associate code to create your own RShiny app! It will take numeric input from a select dropdown menu, radio button and slider and then multiply the values together and return the product. Let's break this down into a few parts:
+In this exercise, you will use the input widgets presented above and the associate code to create your own RShiny app! 
 
-1. Create the user interface for the app that allows the user to select the values 1-3 from a `selectInput()` function, the values 4-6 from a `radioButtons()` function and the values 7-9 from a `sliderInput()`.
+Your app should take three numeric inputs, one each from a select dropdown menu, a radio button and a slider. It should multiply the three values together, and return the product. Let's break this down into a few parts:
+
+1. Create a user interface for an app that allows the user to select the values 1-3 from a `selectInput()` function, the values 4-6 from a `radioButtons()` function and the values 7-9 from a `sliderInput()`.
 2. In the user interface create a place for the output text for the product of these values to appear.
 3. Create a server for the app that multiples the three input values together and renders their product as text. _Hint: You will need to wrap each input in a `as.numeric()` function._
 4. Run the app.
