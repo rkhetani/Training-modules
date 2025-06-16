@@ -13,7 +13,7 @@ In this lesson, you will:
 
 In the previous lesson, we introduced using the `textInput()` function. This function is actually a type of widget and there are many widget inputs that exist. In this next sections, we will explore some of these different input widgets.
 
-## Text box
+## Multi line inputs with `textAreaInput()`
 
 Similar to `textInput()`, `textAreaInput()` functions in many of the same ways, but instead of having a single line where you can enter text into, it allows for multi-line input. An example of the code you would use to do that is below:
 
@@ -59,7 +59,7 @@ textAreaInput("input_text", "My input text", placeholder = "Write about anything
 
 Adding this in creates default text to appear in the box, giving the user an example. 
 
-## Sliders
+## Interactive sliders with `sliderInput()`
 
 Slider inputs are a great way to provide an interactive range for the user to select a value from. Below we will have the example code that one can use to create a slider input:
 
@@ -101,7 +101,7 @@ Note that the only line we changed was the `textAreaInput()` line to `sliderInpu
 > NOTE: If you would like the slider to contain a range of values, then you would need to use a vector within the `value` option like  `value = c(2,6)` where the first value is the default "from" position in the range and the second value is the default "to" value in the range.
 
 
-## Dropdown 
+## Dropdown menus for input with `selectInput()`
 
 Oftentimes when you are working with input data, you would like to select some of your data from a list of options. One way of doing this is to have a dropdown list of options and `selectInput()` is the function you would use to accomplish this. For this function, the additonal argument `choices` is used to specify all the options in the dropdown.
 
@@ -140,7 +140,7 @@ Some additional arguments for `selectInput()` are provided below:
 > Note that you can alternatively use `selectizeInput()` instead of `selectInput()` to have more control over the dropdown. While this is outside of the scope of this lesson, the documentation for this can be found [here](https://selectize.dev/docs/usage).
 
 
-## Radio buttons
+## Radio buttons for multiple choice with `radioButtons()`
 
 If you would like your user to be able to toggle between various options, then radio buttons might an an option that you are interested in. Below we have an example code for radio buttons:
 
@@ -182,7 +182,7 @@ Some additional arguments you might consider when using radio buttons are:
 
 The are **two styles** of checkboxes that you can choose from. A single checkbox (`checkboxInput()`) that will return the values of `TRUE` and `FALSE` and also a group of checkboxes (`checkboxGroupInput()`) where you can select multiple items from. 
 
-### checkboxInput
+### `checkboxInput()` for a single checkbox
 
 If we want a single checkbox to toggle then we can use `checkboxInput()`. An example is below:
 
@@ -218,7 +218,7 @@ An additional argument that you might want to use with `checkboxInput()` is:
 | value | Allows you set the default to be equal to `TRUE` or `FALSE` | `value = TRUE` |
 
 
-### checkboxGroupInput
+### `checkboxGroupInput()` to allow selection of multiple options
 
 Similar to radio buttons, Shiny apps can provide checkboxes for users to utilize. This can be particularly useful if you would like the users to be able to select multiple options. Let's look at an example code for this:
 
@@ -261,7 +261,7 @@ The input widget for dates allows you to select a specific date from a dropdown 
 1. `dateInput()`: Selecting a single date 
 2. `dateRangeInput()`: Selecting a range of dates
 
-### Single date
+### `dateInput()` for selecting a Single date
 
 When selecting a single date from a calendar, we can use the `dateInput()` function. An example is below:
 
@@ -303,7 +303,7 @@ Additional arguments that you might want to use with `dateInput()` are:
 | language | Allows you to set the language for the calendar | `language = "de"` |
 | daysofweekdisabled | Allows you to make certain days of the week unavailible for selection with Sunday being 0 and incrementing to Saturday being 6. You can also make a vector of values to block out multiple days of the week. | `daysofweekdisabled = c(0,6)` |
 
-### Date Range
+### `dateRangeInput()` for selecting a Date Range
 
 You can also collect a date range using Shiny. An example of this is below:
 
@@ -375,7 +375,9 @@ shinyApp(ui = ui, server = server)
 
 ***
 
-## Conditional Panel
+## Conditional input requests with `conditionalPanel()`
+
+### Basics
 
 Suppose you want some input appearing to be conditional on another input's value. This is a good place to utilize the `conditionalPanel()` function. The general syntax for using `conditionalPanel()` is:
 
@@ -422,7 +424,7 @@ This would look like:
 
 <p align="center"><iframe src="https://hcbc.connect.hms.harvard.edu/Conditional_panel_demo/?showcase=0" width="300" height="250px" data-external="1"></iframe></p>
 
-## Required Input
+### Building in change resistance with `req()`
 
 We may have situation in which the app _requires_ input in order for later code to be evaluated. We can actually see an example of this in the previous app. If you still have the previous app open, select "Yes", then select a course of your choosing. Next, change the input to "No". You'll see that the course selections we've made are still present!
 
