@@ -21,11 +21,13 @@ library(DT)
 To render a data table on the UI side you would use:
 
 ```
+## DO NOT RUN
 DTOutput("outputID")
 ```
 
 On the server side you would use:
 ```
+## DO NOT RUN
 output$<outputID> <- renderDT({
     <insert_dataframe>
   })
