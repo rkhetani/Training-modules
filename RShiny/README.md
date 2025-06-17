@@ -27,8 +27,8 @@ In this workshop, users will be able to:
 | Lesson            | Estimated Duration |
 |:----------------|:----------|
 | Introduction to the course | 20 min | 
-| [R Shiny App Structure and Syntax](lessons/01_syntax_and_structure.md) | 20 min | 
-| [Input options](lessons/02_inputs.md) | 50 min |
+| [R Shiny App Structure and Syntax](lessons/01_syntax_and_structure.md) | 30 min | 
+| [Input options](lessons/02_inputs.md) | 40 min |
 
 ### Day 2
 
