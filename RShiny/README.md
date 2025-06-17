@@ -2,7 +2,7 @@
 
 | Audience | Computational skills required | Duration |
 :----------|:----------|:----------|
-| Biologists | [R Basic](../../IntroR/) | 2-3 hour workshop (~3 hours of trainer-led time)|
+| Biologists | [R Basic](../IntroR/) | 2-3 hour workshop (~3 hours of trainer-led time)|
 
 
 ## Description
