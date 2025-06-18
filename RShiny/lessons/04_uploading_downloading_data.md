@@ -98,7 +98,7 @@ actionButton("inputID", "Label", class = "btn-primary")
 ```
 
 <details>
-<summary><b>Click here if you would like to see a table of availible action button styles</b></summary>
+<summary><b>Click here if you would like to see a table of available action button styles</b></summary>
 <table>
   <tr>
     <th>Class</th>
