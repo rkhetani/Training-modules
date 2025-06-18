@@ -167,50 +167,6 @@ actionButton("inputID", "Label", class = "btn-primary")
 
 > Note: `bindEvent()` is a newer function and when coupled with `observe()` and `reactive()` functions, it replaces `observeEvent()` and `eventReactive()` functions, respectively. It is recommended to use `bindEvent()` moving forward as it is more flexible, but you may still run across code that utilizes `observeEvent()` and `eventReactive()`. 
 
-## Isolate
-
-In Shiny, you may find that you will want to limit the reactivity. However, you might want only partial reactivity and this is where the `isolate()` feature can be quite helpful. You can create a non-reactive scope around an expression using `isolate`. The syntax for using `isolate()` is:
-
-```
-isolate(<non_reactive_expression>)
-```
-
-We can create a similar app to the one above but edit the code to use isolate. In this example, we will see that the first slider is completely reactive, however the second slider is only reacts once the action button has been clicked:
-
-```
-# User interface
-ui <- fluidPage(
-    # Slider for the user to select a number between 1 and 10
-    sliderInput("slider_input_1", "Select a number", value = 5, min = 1, max = 10),
-    # Slider for the user to select a number between 1 and 10
-    sliderInput("slider_input_2", "Select a number", value = 5, min = 1, max = 10),
-    # The button that will re-process the calculation containing elements within the isolate function after it has been clicked
-    actionButton("calculate", "Multiply!"),
-    # The output text
-    textOutput("product")
-)
-
-# Server
-server <- function(input, output) {
-    # Renders the text for the product of the values from the two sliders
-    # Note that the first slider is not inside an isolate function and will thus react in real-time, while the second slider is within an isolate function, so it will only be evaluated when the action button has been clicked
-    output$product <- renderText({
-        input$calculate
-        input$slider_input_1 * isolate(input$slider_input_2)
-    })
-}
-
-# Run the app
-shinyApp(ui = ui, server = server)
-```
-
-This app would look like:
-
-<p align="center"><iframe src="https://hcbc.connect.hms.harvard.edu/Input_isolate_demo/?showcase=0" width="400px" height="300px" data-external="1"></iframe></p>
-
-
-> Note: If we had used `isolate(input$slider_input_1 * input$slider_input_2)` instead of `input$slider_input_1 * isolate(input$slider_input_2)`, then this app would function similarly to the app from the previous section since there are now two sliders' widget inputs are within the `isolate()` function.
-
 # Uploads and Downloads
 
 Transferring files to and from an app is a common feature of Shiny apps. You can use it to upload data for analysis, download the results of an analysis or a figure you generated. Now we will introduce you to functions that help with file handling in addition to some other advanced topics which tie in nicely (and are helpful when running these functions).
