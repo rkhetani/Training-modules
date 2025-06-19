@@ -31,30 +31,19 @@ Action buttons allow the user to tell Shiny when to process data. This can be he
 
 On the UI side:
 ```
+## DO NOT RUN
 actionButton("inputID", "Label")
 ```
 
 On the Server side:
 ```
+## DO NOT RUN
 reactive_expression_with_action_button <- bindEvent(reactive(
     <reactive_expression>
   ), input$<action_button_inputID>)
 ```
 
-The `actionButton("inputID", "Label")` line creates our action button in the UI, while `bindEvent(reactive(<reactive_expression>), input$<action_button_inputID>)` wraps a reactive expression within the `bindEvent()` function on the server side. Alternatively, you may see in others' code using a pipe (see below), but this is equivalent code to what is listed above:
-
-On the UI side:
-```
-actionButton("inputID", "Label")
-```
-
-On the server side:
-```
-reactive_expression_with_action_button <- reactive(
-    <reactive_expression>
-  ) >%>
-  bindEvent(input$<action_button_inputID>)
-```
+The `actionButton("inputID", "Label")` line creates our action button in the UI, while `bindEvent(reactive(<reactive_expression>), input$<action_button_inputID>)` wraps a reactive expression within the `bindEvent()` function on the server side. 
 
 Below is example code on how we could implement this:
 
@@ -94,6 +83,7 @@ This app would visualize like:
 A wide variety of action button styles exist by adding the `class` argument to your `actionButton()` function. Such as:
 
 ```
+## DO NOT RUN
 actionButton("inputID", "Label", class = "btn-primary")
 ```
 
@@ -175,6 +165,7 @@ Transferring files to and from an app is a common feature of Shiny apps. You can
 Often apps are created such that one can explore their own data in some way. To allows users to upload their own data into the app we use the `fileInput()` function on the UI side:
 
 ```
+## DO NOT RUN
 fileInput("<input_fileID>", "<Text_above_file_upload>")
 ```
 
@@ -192,6 +183,7 @@ _\* Uploading multiple files can be a bit tricky and is outside of the scope of 
 On the server side it would look like:
 
 ```
+## DO NOT RUN
   uploaded_file <- reactive({
     req(input$<input_fileID>)
     read.table(input$<input_fileID>$datapath)
@@ -245,6 +237,7 @@ If you have a data frame that you want to download then the important pieces of 
 On the UI side:
 
 ```
+## DO NOT RUN
 downloadButton("<download_buttonID>", "Download the data .csv")
 ```
 
@@ -253,6 +246,7 @@ The download button is very similar to the `actionButton()` function that we've 
 On the server side:
 
 ```
+## DO NOT RUN
   output$<download_buttonID> <- downloadHandler(
     filename = function() {
       "<your_placeholder_filename>.csv"
@@ -329,11 +323,13 @@ Downloading a plot is similiar to downloading a table. It also uses the `downloa
 
 On the UI side:
 ```
+## DO NOT RUN
 downloadButton("<download_buttonID>", "Download the data .png")
 ```
 
 On the server side:
 ```
+## DO NOT RUN
   output$<download_buttonID> <- downloadHandler(
     filename = function() {
       "<your_placeholder_filename>.png"
