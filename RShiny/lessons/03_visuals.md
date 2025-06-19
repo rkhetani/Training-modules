@@ -245,6 +245,7 @@ The last way that you can make your plots interactive is with brushing. Perhaps 
 On the UI side:
 
 ```
+## DO NOT RUN
 plotOutput("plot", brush = "<plot_brushID>")
 ```
 
