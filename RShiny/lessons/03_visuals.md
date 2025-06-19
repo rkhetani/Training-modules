@@ -82,12 +82,14 @@ The syntax for implementing plots is:
 On the UI side:
 
 ```
+## DO NOT RUN
 plotOutput("<outputID>")
 ```
 
 On the server side:
 
 ```
+## DO NOT RUN
 output$<outputID> <- renderPlot({
     <insert_plot_creation>
 })
@@ -141,6 +143,7 @@ The first way that we can interact with a plot is by clicking a point on the plo
 On the UI side:
 
 ```
+## DO NOT RUN
 plotOutput("plot", click = "<plot_clickID>")
 ```
 
@@ -152,6 +155,7 @@ The `click = "<plot_clickID>"` argument allows for an input from the click actio
 On the server side, we have a few new functions as well:
 
 ```
+## DO NOT RUN
   output$table <- renderDT({
     nearPoints(<dataframe_used_in_plotting>, input$<plot_clickID>)
   })
@@ -195,6 +199,7 @@ Instead of clicking on points in your plot, you can instead hover over them and 
 
 On the UI side:
 ```
+## DO NOT RUN
 plotOutput("plot", hover = hoverOpts("<plot_hoverID>", delay = 25))
 ```
 
@@ -255,6 +260,7 @@ We can change `brush = "<plot_brushID>"` to `brush = brushOpt("<plot_brushID>")`
 On the server side we need to use:
 
 ```
+## DO NOT RUN
   output$table <- renderDT({
     brushedPoints(<dataframe_used_in_plotting>, input$<plot_brushID>)
   })
